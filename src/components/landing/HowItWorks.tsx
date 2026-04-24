@@ -17,7 +17,7 @@ const steps = [
     icon: Package,
     number: "03",
     title: "Receba em casa",
-    desc: "Produzimos com carinho e enviamos em embalagem caprichada para todo o Brasil.",
+    desc: "Produzimos com carinho e entregamos em embalagem caprichada na sua casa.",
   },
 ];
 
@@ -31,7 +31,7 @@ const HowItWorks = () => {
           </span>
           <h2 className="mt-3 font-display text-4xl md:text-5xl font-semibold leading-tight">
             Do papo ao presente em{" "}
-            <span className="italic text-gradient-warm">3 passos</span>.
+            <span className=" text-gradient-warm">3 passos</span>.
           </h2>
         </div>
 
