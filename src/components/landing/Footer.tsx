@@ -1,4 +1,5 @@
-import { Sparkles, Instagram, MessageCircle, Mail } from "lucide-react";
+import { Instagram, MessageCircle, Mail } from "lucide-react";
+import Logo from "@/assets/Logo.png"
 
 const Footer = () => {
   return (
@@ -6,13 +7,8 @@ const Footer = () => {
       <div className="container">
         <div className="grid md:grid-cols-3 gap-10">
           <div>
-            <div className="flex items-center gap-2">
-              <span className="grid place-items-center w-9 h-9 rounded-full bg-gradient-warm">
-                <Sparkles className="w-4 h-4 text-primary-foreground" />
-              </span>
-              <span className="font-display text-2xl font-semibold">
-                Imprimindo <span className="italic text-gradient-warm">Ideias</span>
-              </span>
+            <div className="bg-white rounded-full p-2 h-10 w-10">
+              <img className="w-full h-full object-contain" src={Logo} alt="Imprimindo Ideias" />
             </div>
             <p className="mt-4 text-background/70 leading-relaxed text-sm max-w-xs">
               Canecas personalizadas e presentes únicos feitos com carinho para
@@ -35,14 +31,14 @@ const Footer = () => {
             <ul className="space-y-3 text-background/70 text-sm">
               <li className="flex items-center gap-3">
                 <MessageCircle className="w-4 h-4" />
-                <a href="https://wa.me/5511999999999" className="hover:text-background transition-colors">
-                  (11) 99999-9999
+                <a href="https://wa.me/5548998450981" className="hover:text-background transition-colors">
+                  (48) 99845-0981
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Instagram className="w-4 h-4" />
-                <a href="https://instagram.com/imprimindoideias" className="hover:text-background transition-colors">
-                  @imprimindoideias
+                <a href="https://instagram.com/imprimindoideias.canecas" className="hover:text-background transition-colors">
+                  @imprimindoideias.canecas
                 </a>
               </li>
               <li className="flex items-center gap-3">

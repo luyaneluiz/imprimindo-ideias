@@ -22,7 +22,7 @@ const CTA = () => {
             <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
               <Button asChild size="xl" variant="soft" className="bg-background text-foreground">
                 <a
-                  href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Quero%20encomendar%20uma%20caneca%20personalizada."
+                  href="https://wa.me/5548998450981?text=Ol%C3%A1!%20Quero%20encomendar%20uma%20caneca%20personalizada."
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -32,12 +32,12 @@ const CTA = () => {
               </Button>
               <Button asChild size="xl" variant="soft" className="bg-transparent text-primary-foreground border-primary-foreground/40 hover:bg-primary-foreground/10">
                 <a
-                  href="https://instagram.com/imprimindoideias"
+                  href="https://instagram.com/imprimindoideias.canecas"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <Instagram className="w-5 h-5" />
-                  @imprimindoideias
+                  @imprimindoideias.canecas
                 </a>
               </Button>
             </div>
