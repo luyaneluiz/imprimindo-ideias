@@ -1,46 +1,42 @@
-import productMug from "@/assets/product-mug.jpg";
-import productSqueeze from "@/assets/product-squeeze.jpg";
-import productMimo from "@/assets/product-mimo.jpg";
-import productBuque from "@/assets/product-buque.jpg";
-import productCesta from "@/assets/product-cesta.jpg";
+import productMug from "@/assets/Product-mug.jpeg";
+import productCup from "@/assets/Product-cup.jpeg"
+import productSqueeze from "@/assets/Product-buque.jpeg";
+import productMimo from "@/assets/Product-mimo.jpeg";
+import productBuque from "@/assets/Product-buque.jpeg";
+import productCesta from "@/assets/Product-cesta.jpeg";
 import { Button } from "@/components/ui/button";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Gift } from "lucide-react";
 
 const products = [
   {
     title: "Caneca personalizada",
     desc: "Sua arte, foto ou frase favorita estampada em cerâmica de alta qualidade.",
     image: productMug,
-    tag: "Mais vendida",
-    span: "lg:col-span-2",
+  },
+  {
+    title: "Xícara especial",
+    desc: "Xícara com design exclusivo, perfeita para sua manhã.",
+    image: productCup,
   },
   {
     title: "Squeeze de alumínio",
     desc: "Garrafa leve e resistente para acompanhar você todos os dias.",
     image: productSqueeze,
-    tag: "Novo",
-    span: "",
   },
   {
     title: "Caneca mimo",
     desc: "Caneca recheada de chocolates e amor — pronta para presentear.",
     image: productMimo,
-    tag: "",
-    span: "",
   },
   {
     title: "Caneca buquê",
     desc: "Flores delicadas em uma caneca personalizada. Romântico e único.",
     image: productBuque,
-    tag: "Trend",
-    span: "",
   },
   {
     title: "Cesta com caneca",
     desc: "Kit presente completo: caneca, doces e itens gourmet selecionados.",
     image: productCesta,
-    tag: "Premium",
-    span: "lg:col-span-2",
   },
 ];
 
@@ -48,7 +44,7 @@ const Products = () => {
   return (
     <section id="produtos" className="py-20 md:py-28 bg-background">
       <div className="container">
-        <div className="max-w-2xl mb-12 md:mb-16">
+        <div className=" mb-12 md:mb-16">
           <span className="text-sm font-medium text-primary uppercase tracking-wider">
             Nosso catálogo
           </span>
@@ -66,7 +62,7 @@ const Products = () => {
           {products.map((p) => (
             <article
               key={p.title}
-              className={`group relative overflow-hidden rounded-3xl bg-card border border-border/60 shadow-soft hover:shadow-warm transition-all duration-500 hover:-translate-y-1 ${p.span}`}
+              className="group relative overflow-hidden rounded-3xl bg-card border border-border/60 shadow-soft hover:shadow-warm transition-all duration-500 hover:-translate-y-1"
             >
               <div className="aspect-[4/5] overflow-hidden bg-secondary">
                 <img
@@ -78,11 +74,7 @@ const Products = () => {
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
               </div>
-              {p.tag && (
-                <span className="absolute top-4 left-4 px-3 py-1 rounded-full bg-background/90 backdrop-blur text-xs font-semibold text-primary border border-border/60">
-                  {p.tag}
-                </span>
-              )}
+              
               <div className="p-6">
                 <div className="flex items-start justify-between gap-3">
                   <h3 className="font-display text-2xl font-semibold">
@@ -100,7 +92,10 @@ const Products = () => {
 
         <div className="mt-12 text-center">
           <Button asChild variant="hero" size="lg">
-            <a href="#contato">Quero personalizar o meu</a>
+            <a href="#contato">
+              <Gift className="w-5 h-5 mr-1" />
+              Quero personalizar o meu!
+            </a>
           </Button>
         </div>
       </div>
