@@ -1,6 +1,6 @@
 import productMug from "@/assets/Product-mug.jpeg";
 import productCup from "@/assets/Product-cup.jpeg"
-import productSqueeze from "@/assets/Product-buque.jpeg";
+import productSqueeze from "@/assets/Product-squeeze.jpeg";
 import productMimo from "@/assets/Product-mimo.jpeg";
 import productBuque from "@/assets/Product-buque.jpeg";
 import productCesta from "@/assets/Product-cesta.jpeg";
